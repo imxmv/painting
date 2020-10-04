@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Painting with RxJS</title>
+</head>
+<body>
+
+<header>
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br>
+            <h2 class="header center teal-text text-lighten-3t">Time to draw!</h2>
+            <br>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m2 l2">
+                <div class="input-field">
+                    <input type="range" min="1" max="4" value="2" id="range">
+                </div>
+                <div class="input-field">
+                    <input type="color" id="color">
+                </div>
+                <button class="btn" id="clearButton" name="clearButton">Clear</button>
+                <br>
+                <br>
+                <a class="btn" id="saveButton" href="#" name="saveButton" download="picture.png">Save</a>
+            </div>
+            <div class="col s12 m10 l10">
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer blue-grey lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                Made by: <a class="white-text" href="https://github.com/imxmv">https://github.com/imxmv</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
